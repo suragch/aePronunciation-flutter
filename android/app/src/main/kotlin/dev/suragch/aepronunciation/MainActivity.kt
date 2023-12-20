@@ -1,4 +1,4 @@
-package com.aepronunciation.ipa
+package dev.suragch.aepronunciation
 
 import io.flutter.embedding.android.FlutterActivity
 
