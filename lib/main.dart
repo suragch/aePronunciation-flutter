@@ -1,3 +1,4 @@
+import 'package:aepronunciation/pages/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,18 +10,9 @@ class AePronunciationApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'ae Pronunciation',
-      home: HomeScreen(),
+      home: MainScreen(),
     );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

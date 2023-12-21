@@ -1,3 +1,7 @@
+import 'package:aepronunciation/pages/learn_page.dart';
+import 'package:aepronunciation/pages/main_screen.dart';
+import 'package:aepronunciation/pages/practice_page.dart';
+import 'package:aepronunciation/pages/test_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -12,25 +16,25 @@ class NavigationService {
           StatefulShellRoute.indexedStack(
               parentNavigatorKey: mainNavigationKey,
               builder: (context, state, navigationShell) {
-                return Placeholder();
+                return MainScreen();
               },
               branches: [
                 StatefulShellBranch(initialLocation: '/home', routes: [
                   GoRoute(
                     path: '/learn',
-                    builder: (context, state) => Placeholder(),
+                    builder: (context, state) => LearnPage(),
                   ),
                 ]),
                 StatefulShellBranch(initialLocation: '/home', routes: [
                   GoRoute(
                     path: '/practice',
-                    builder: (context, state) => Placeholder(),
+                    builder: (context, state) => PracticePage(),
                   ),
                 ]),
                 StatefulShellBranch(initialLocation: '/home', routes: [
                   GoRoute(
                     path: '/test',
-                    builder: (context, state) => Placeholder(),
+                    builder: (context, state) => TestPage(),
                   ),
                 ]),
               ]),
