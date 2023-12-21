@@ -1,7 +1,7 @@
-import 'package:aepronunciation/pages/learn_page.dart';
+import 'package:aepronunciation/pages/learn/learn_page.dart';
 import 'package:aepronunciation/pages/main_screen.dart';
-import 'package:aepronunciation/pages/practice_page.dart';
-import 'package:aepronunciation/pages/test_page.dart';
+import 'package:aepronunciation/pages/practice/practice_page.dart';
+import 'package:aepronunciation/pages/test/test_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

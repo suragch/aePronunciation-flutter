@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'learn_page.dart'; // Assuming you have a file named learn_page.dart with LearnPage widget
-import 'practice_page.dart'; // Assuming you have a file named practice_page.dart with PracticePage widget
-import 'test_page.dart'; // Assuming you have a file named test_page.dart with TestPage widget
+import 'learn/learn_page.dart'; // Assuming you have a file named learn_page.dart with LearnPage widget
+import 'practice/practice_page.dart'; // Assuming you have a file named practice_page.dart with PracticePage widget
+import 'test/test_page.dart'; // Assuming you have a file named test_page.dart with TestPage widget
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -34,6 +34,7 @@ class _MainScreenState extends State<MainScreen> {
         children: _pages,
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Theme.of(context).colorScheme.primary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.personChalkboard),

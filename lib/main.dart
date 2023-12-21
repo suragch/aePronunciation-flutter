@@ -13,7 +13,10 @@ class AePronunciationApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ae Pronunciation',
-      home: MainScreen(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      ),
+      home: const MainScreen(),
     );
   }
 }
