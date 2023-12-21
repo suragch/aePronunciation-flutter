@@ -11,6 +11,7 @@ class AePronunciationApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'ae Pronunciation',
       home: MainScreen(),
     );
